@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Lumineers - FAN</title>
+    <style>
+        body,
+        html {
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f9dea7;
+            position: relative;
+        }
+
+        .video_content {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-color: #f9dea7;
+            transition: all 3s ease-out;
+            border: 0px solid black;
+            border-left: 1px solid black;
+        }
+
+        .video_content video {
+            width: 90%;
+            height: 90%;
+        }
+
+        .img_before {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .img_before img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .vinil-content {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
+            width: 100%;
+            height: 100%;
+        }
+
+        .vinil {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .vinil div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 500px;
+            height: 500px;
+            margin: 10px;
+        }
+
+        .controls {
+            width: 100%;
+            height: 70px;
+            background-color: #333;
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        .controls-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #play-pause {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        #play-pause img {
+            width: 50px;
+            height: 50px;
+            margin-top: 3px;
+        }
+
+        #prev, #next {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0px 20px;
+            cursor: pointer;
+            width: 25px;
+            height: 25px;
+        }
+
+        #prev img {
+            width: 15px;
+            height: 15px;
+        }
+
+        #next img {
+            width: 15px;
+            height: 15px;
+            transform: rotate(180deg);
+        }
+
+        #text-song {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            color: white;
+            padding: 0pc 0px 0px 16px;
+            width: 200px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        #controls-center {
+            width: 100px;
+        }
+
+        #close {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 200px;
+        }
+
+        #close img {
+            width: 40px;
+            height: 40px;
+            margin-right: 20px;
+            transform: rotate(90deg);
+            cursor: pointer;
+        }
+
+        .vinil-animation {
+            transform-origin: 50.2% 50.2%;
+            animation: 3s rotate linear infinite;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="vinil-content">
+        <div class="vinil">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 450">
+                    <title>tlms-vinil</title>
+                    <g id="rotate_id" class="">
+                      <circle cx="226" cy="226" r="224" style="fill: #191919"/>
+                      <circle cx="250" cy="250" r="88" transform="translate(-128.26 226) rotate(-45)" style="fill: #f9dea7"/>
+                      <path d="M250.5,163.2a87.3,87.3,0,1,1-87.3,87.3,87.4,87.4,0,0,1,87.3-87.3m0-2a89.3,89.3,0,1,0,89.3,89.3,89.3,89.3,0,0,0-89.3-89.3Z" transform="translate(-24.5 -24.5)"/>
+                      <path d="M101.27,408.86a242,242,0,0,0,70.83,42.93c4.5,1.74,8.84,1.1,10.38-3.47l34.41-102.65a8.46,8.46,0,0,0-4.71-10.49c-5.6-2.36-13.39-6.29-19.67-11.82a8.5,8.5,0,0,0-11.32,0l-80.6,72.79C96.84,399.57,97.49,405.51,101.27,408.86Z" transform="translate(-24.5 -24.5)" style="fill: #999"/>
+                      <path d="M405.73,98.62c-8.06-11.26-43-44.19-84.8-53.9-4.7-1.09-8.85-1.1-10.38,3.47L276.13,150.84c-1.4,4.2.73,9.63,4.8,11.35,5.6,2.37,29.27,16.4,35.55,21.93a8.48,8.48,0,0,0,11.32,0l78.6-72.79C410.15,107.92,408.66,102.73,405.73,98.62Z" transform="translate(-24.5 -24.5)" style="fill: #999"/>
+                    </g>
+                    <text transform="translate(207.52 216.28)" style="font-size: 24px;fill: #333;font-family: Cambria-Bold, Cambria;font-weight: 700">The <tspan x="-38.06" y="28.8">Lumineers</tspan></text>
+                </svg>
+            </div>
+        </div>
+        <div class="controls">
+            <div id="text-song"></div>
+            <div class="controls-center">
+                <div id="prev" onclick="changeSong('prev')"><img src="./src/images/prev.svg" alt=""></div>
+                <div id="play-pause" onclick="playPause()"><img src="./src/images/play.svg" alt="" id="img_p_btn"></div>
+                <div id="next" onclick="changeSong('next')"><img src="./src/images/prev.svg" alt=""></div>
+            </div>
+            <div id="close" onclick="hideCover('open')"><img src="./src/images/arrow.svg" alt=""></div>
+        </div>
+    </div>
+    <div id="cover-page" onclick="hideCover('close')" class="video_content">
+        <video src="./src/video/videoplayback.mp4" autoplay loop></video>
+        <div class="img_before">
+            <img src="./src/images/thelumineers.svg" alt="">
+        </div>
+    </div>
+    <audio id="song" src="./src/songs/Life In The City.mp3"></audio>
+    <script>
+        const vinil = document.getElementById('rotate_id');
+        const principalBtn = document.getElementById('play-pause');
+        const principalBtnImg = document.getElementById('img_p_btn');
+        const prevBtn = document.getElementById('prev');
+        const nextBtn = document.getElementById('next');
+        const audio = document.getElementById('song');
+        const coverPage = document.getElementById('cover-page');
+        const closeBtn = document.getElementById('close');
+        const text = document.getElementById('text-song');
+        const songs = [
+            'Donna', 'Life In The City', 'Gloria',
+            'It Wasn\'t Easy To Be Happy For You', 'Leader Of The Landslide',
+            'Left For Denver','My Cell', 'JimmySparks', 'April',
+            'Salt And The Sea', 'Democracy', 'Old Lady', 'Soundtrack Song'
+        ]
+        let actualSong = 0;
+        let isPaused = true;
+
+        text.innerText = 'Life In The City';
+
+        function changeSong(btn) {
+            if (btn === 'prev') {
+                if (actualSong === 0) {
+                    audio.src = "./src/songs/" + songs[songs.length-1].replace(/ /g, "") + '.mp3';
+                    text.innerText = songs[songs.length-1];
+                    actualSong = songs.length-1;
+                } else {
+                    audio.src = "./src/songs/" + songs[actualSong--].replace(/ /g, "") + '.mp3';
+                    text.innerText = songs[actualSong];
+                }
+                isPaused = true;
+                playPause();
+            } else {
+                if (actualSong === songs.length-1) {
+                    audio.src = "./src/songs/" + songs[0].replace(/ /g, "") + '.mp3';
+                    text.innerText = songs[0];
+                    actualSong = 0;
+                } else {
+                    audio.src = "./src/songs/" + songs[actualSong++].replace(/ /g, "") + '.mp3';
+                    text.innerText = songs[actualSong];
+                }
+                isPaused = true;
+                playPause();
+            }
+        }
+
+        function playPause() {
+            if (isPaused) {
+                vinil.classList.add('vinil-animation');
+                principalBtnImg.src = './src/images/pause.svg';
+                audio.play();
+                isPaused = false;
+            } else {
+                vinil.classList.remove('vinil-animation');
+                principalBtnImg.src = './src/images/play.svg';
+                audio.pause();
+                isPaused = true;
+            }
+            
+        }
+
+        function hideCover(mode) {
+            if (mode === 'open') {
+                coverPage.style.marginRight = "0px";
+            } else {
+                coverPage.style.marginRight = "-" + (window.innerWidth + coverPage.clientWidth) + "px";
+            }
+    
+        }
+
+        window.addEventListener('resize', () => {
+            hideCover();
+        })
+
+    </script>
+</body>
+
+</html>
