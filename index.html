@@ -232,8 +232,8 @@
         let actualSong = 0;
         let isPaused = true;
 
-        text.innerText = 'Life In The City';
-        audio.src = "./src/songs/" + songs[actualSong].replace(/ /g, "") + '.mp3';
+        text.innerText = songs[actualSong];
+        audio.src = "./src/songs/" + songs[actualSong] + '.mp3';
 
         function changeSong(btn) {
             if (btn === 'prev') {
