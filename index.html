@@ -29,7 +29,7 @@
             align-items: center;
             position: relative;
             background-color: #f9dea7;
-            transition: all 2s ease-out;
+            transition: all 1.5s ease-out;
             border: 0px solid black;
             border-left: 1px solid black;
         }
@@ -243,7 +243,7 @@
                     actualSong = songs.length-1;
                 } else {
                     actualSong--
-                    audio.src = "./src/songs/" + songs[actualSong-1].replace(/ /g, "") + '.mp3';
+                    audio.src = "./src/songs/" + songs[actualSong].replace(/ /g, "") + '.mp3';
                     text.innerText = songs[actualSong-1];
                 }
                 isPaused = true;
@@ -255,7 +255,7 @@
                     actualSong = 0;
                 } else {
                     actualSong++
-                    audio.src = "./src/songs/" + songs[actualSong+1].replace(/ /g, "") + '.mp3';
+                    audio.src = "./src/songs/" + songs[actualSong].replace(/ /g, "") + '.mp3';
                     text.innerText = songs[actualSong+1];
                 }
                 isPaused = true;
