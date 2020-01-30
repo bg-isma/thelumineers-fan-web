@@ -244,7 +244,7 @@
                 } else {
                     actualSong--
                     audio.src = "./src/songs/" + songs[actualSong].replace(/ /g, "") + '.mp3';
-                    text.innerText = songs[actualSong-1];
+                    text.innerText = songs[actualSong];
                 }
                 isPaused = true;
                 playPause();
@@ -256,7 +256,7 @@
                 } else {
                     actualSong++
                     audio.src = "./src/songs/" + songs[actualSong].replace(/ /g, "") + '.mp3';
-                    text.innerText = songs[actualSong+1];
+                    text.innerText = songs[actualSong];
                 }
                 isPaused = true;
                 playPause();
